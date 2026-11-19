@@ -1,59 +1,218 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Shopify — Multi-Vendor E-Commerce Platform & AI Marketplace
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel](https://img.shields.io/badge/Laravel-11.x-FF2D20.svg?logo=laravel)](https://laravel.com/)
+[![React](https://img.shields.io/badge/React-19.x-61DAFB.svg?logo=react)](https://react.dev/)
+[![Inertia.js](https://img.shields.io/badge/Inertia.js-2.x-9553E9.svg?logo=inertia)](https://inertiajs.com/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.x-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com/)
+[![Gemini AI](https://img.shields.io/badge/Gemini_AI-2.0_Flash-4285F4.svg?logo=google)](https://ai.google.dev/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-## About Laravel
+A modern, full-stack multi-vendor e-commerce marketplace platform engineered with **Laravel 11**, **Inertia.js**, and **React 19**. Features role-based portals for Buyers, Sellers, and Admins, semantic vector search powered by **Google Gemini AI**, live order tracking pipelines, and interactive seller analytics.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+---
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 🎬 Sneak Peek
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Shopify Platform Sneak Peek](docs/sneak-peek.gif)
 
-## Learning Laravel
+> **Walkthrough highlights:**
+> - High-impact animated intro loader with floating 3D e-commerce elements and cybernetic lighting.
+> - Curated storefront with category carousels, featured product highlights, and responsive navigation.
+> - Product catalog view with live filtering, dynamic sorting, and semantic search integration.
+> - Role-based authentication portal providing seamless switching between Buyer, Seller, and Admin workspaces.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## ✨ System Features
 
-## Laravel Sponsors
+### 🛍️ Customer Storefront & Buyer Portal
+- **Modern Catalog Experience**: Browse products with instant category filtering, price range sorting, and brand highlights.
+- **Smart AI Shopping Assistant**: Integrated conversational assistant powered by Google Gemini to help buyers find the perfect item based on natural language queries.
+- **Cart & Dynamic Checkout**: Multi-item cart management, promo codes, multiple shipping addresses, and saved payment methods.
+- **Order Tracking & Invoices**: Real-time order progress timeline (Pending → Processing → Shipped → Delivered) with downloadable order invoices.
+- **Reviews & Ratings**: Verified customer ratings, feedback, and AI-powered sentiment summarization of product reviews.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🏪 Dedicated Seller Workspace
+- **Vendor Onboarding**: Streamlined merchant registration with customizable shop profiles and branding.
+- **Product Inventory Management**: Complete CRUD operations for products, SKU tracking, multi-image upload handling, and automated embedding generation.
+- **Analytics & Revenue Dashboard**: Interactive revenue charts, sales velocity, average order values (AOV), and customer retention powered by Recharts.
+- **Order Fulfillment**: Track vendor-specific order items, update tracking IDs, and manage split orders.
+- **Payout Management**: Request payout withdrawals, monitor processing status, and track commission breakdowns.
 
-### Premium Partners
+### 🛡️ Admin Command Center
+- **System Telemetry**: Global platform metrics, GMV (Gross Merchandise Volume), commission earnings, and active vendor counts.
+- **Category & Taxonomy Management**: Multi-level hierarchical categories with custom imagery and slug management.
+- **Vendor Moderation & Payout Approvals**: Review pending merchant payout requests, verify accounts, and manage platform safety.
+- **Global Platform Settings**: Configurable platform commission rates, operational toggles, and feature flags.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+### 🧠 Gemini AI & Vector Embeddings
+- **Semantic Product Embeddings**: Generates high-dimensional vector embeddings for product titles and descriptions using Gemini's embedding model.
+- **Natural Language Product Discovery**: Buyers can search by conceptual phrases (e.g., *"lightweight clothes for summer beach vacation"*) rather than exact keyword matches.
+- **Automated Review Summaries**: Consolidates multiple customer reviews into concise pros-and-cons takeaways.
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## 🏗️ Architecture & Data Flow
 
-## Code of Conduct
+```mermaid
+flowchart TD
+    subgraph Client ["Client Layer (React 19 + Inertia.js)"]
+        Storefront["Storefront & Catalog"]
+        BuyerApp["Buyer Dashboard"]
+        SellerApp["Seller Workspace"]
+        AdminApp["Admin Command Center"]
+    end
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    subgraph Server ["Application Layer (Laravel 11)"]
+        InertiaBridge["Inertia SSR / JSON Bridge"]
+        AuthModule["Role-Based Authentication"]
+        OrderEngine["Order & Commission Engine"]
+        AIService["Gemini AI & Semantic Search Service"]
+    end
 
-## Security Vulnerabilities
+    subgraph Database ["Persistence Layer"]
+        DB[("PostgreSQL / SQLite")]
+        EmbeddingsTable[("Vector Embeddings Store")]
+    end
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    Storefront -->|Browse / Search| InertiaBridge
+    BuyerApp -->|Checkout / Orders| OrderEngine
+    SellerApp -->|Manage Products / Analytics| OrderEngine
+    AdminApp -->|Moderation / Payouts| OrderEngine
 
-## License
+    InertiaBridge --> AuthModule
+    OrderEngine --> DB
+    AIService -->|Generate Embeddings| EmbeddingsTable
+    AIService <-->|API Calls| GeminiAPI["Google Gemini API"]
+```
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+---
+
+## 📁 Repository Structure
+
+```
+shopify/
+├── app/
+│   ├── Http/Controllers/       # Storefront, Buyer, Seller, and Admin controllers
+│   ├── Models/                 # Eloquent models (Product, Shop, Order, Review, User, etc.)
+│   └── Services/               # GeminiService and AIService for embeddings and search
+├── config/                     # Application, database, authentication, and service configs
+├── database/
+│   ├── migrations/             # Schema definitions (users, shops, products, orders, payouts)
+│   └── seeders/                # DemoDataSeeder, AdminSeeder for instant bootstrap
+├── docs/
+│   └── sneak-peek.gif          # Demonstration GIF
+├── public/                     # Compiled assets, brand logos, product demo assets
+├── resources/
+│   ├── css/                    # Tailwind CSS configuration and base styles
+│   ├── js/
+│   │   ├── Components/         # Reusable UI components (IntroLoader, CategoryCombobox, etc.)
+│   │   ├── Layouts/            # Storefront, Buyer, Seller, and Admin shell layouts
+│   │   └── Pages/              # Inertia.js page components (Shop, Checkout, Dashboard, Admin)
+│   └── views/                  # Root Blade application template and invoice layouts
+├── routes/
+│   ├── web.php                 # Core platform, buyer, seller, and storefront routes
+│   └── auth.php                # Authentication routes
+└── vite.config.js              # Vite bundler configuration with Laravel-Inertia plugin
+```
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+- **PHP**: v8.2 or higher
+- **Composer**: v2.x
+- **Node.js**: v18.0 or higher
+- **npm**: v9.0 or higher
+- **Database**: PostgreSQL (recommended for pgvector) or SQLite (for local zero-config testing)
+
+### Installation Steps
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/vkn-can-code/shopify.git
+   cd shopify
+   ```
+
+2. **Install PHP Dependencies:**
+   ```bash
+   composer install
+   ```
+
+3. **Install & Build Frontend Assets:**
+   ```bash
+   npm install
+   npm run build
+   ```
+
+4. **Environment Configuration:**
+   Copy the example environment file and generate the application encryption key:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+5. **Configure Database & AI Credentials:**
+   Open `.env` and set your database connection and optional Gemini API key:
+   ```env
+   DB_CONNECTION=sqlite
+   # Or for PostgreSQL:
+   # DB_CONNECTION=pgsql
+   # DB_HOST=127.0.0.1
+   # DB_PORT=5432
+   # DB_DATABASE=marketplace
+   # DB_USERNAME=your_username
+   # DB_PASSWORD=your_password
+
+   # Google Gemini API Key (for Smart Search & Product Embeddings)
+   GEMINI_API_KEY=your_gemini_api_key_here
+   ```
+
+6. **Run Migrations & Seed Sample Data:**
+   ```bash
+   php artisan migrate --seed
+   ```
+   *This seeds default categories, demo tech/fashion/home shops, products, and admin credentials.*
+
+7. **Generate Semantic Embeddings (Optional):**
+   ```bash
+   php artisan products:embed
+   ```
+
+8. **Start the Development Servers:**
+   ```bash
+   # Terminal 1: Backend Server
+   php artisan serve
+
+   # Terminal 2: Frontend HMR (Vite)
+   npm run dev
+   ```
+   Open your browser at `http://localhost:8000`.
+
+---
+
+## 🔑 Demo Accounts
+
+After running `php artisan db:seed`, the following accounts are available for testing:
+
+| Role | Email | Password |
+| :--- | :--- | :--- |
+| **Admin** | `admin@marketplace.com` | `password` |
+| **Seller (Tech)** | `tech@seller.com` | `password` |
+| **Seller (Fashion)**| `fashion@seller.com` | `password` |
+| **Buyer** | `buyer@demo.com` | `password` |
+
+---
+
+## 👤 Creator
+
+**Vivek K Nair**
+- GitHub: [@vkn-can-code](https://github.com/vkn-can-code)
+- LinkedIn: [Vivek K Nair](https://www.linkedin.com/in/vivek-k-nair-38bbb2383/)
+
+---
+
+## 📄 License
+
+This software is open-sourced under the [MIT License](LICENSE).
